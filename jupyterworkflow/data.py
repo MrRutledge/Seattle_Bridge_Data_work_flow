@@ -3,7 +3,7 @@ from urllib.request import urlretrieve
 
 import pandas as pd
 
-Fremont_URL = 'https://data.seattle.gov/api/views/mdbt-9ykn/rows.csv?accessType=DOWNLOAD'
+Fremont_URL = 'https://data.seattle.gov/api/views/eytj-7qg9/rows.csv?accessType=DOWNLOAD'
 
 def get_data(filename ='Fremont.csv', url = Fremont_URL,
              force_download= False):
@@ -23,7 +23,12 @@ def get_data(filename ='Fremont.csv', url = Fremont_URL,
         The Fremont bridge data"""
     if force_download or not os.path.exists(filename):
       urlretrieve(url, filename)
-    data = pd.read_csv('Fremont.csv',index_col='Date', parse_dates =True)
+    data = pd.read_csv('Fremont.csv',index_col='Date')
+
+    try:
+        data.index = pd.to_datetime(data.index, format='%m/%d/%Y %I:%M:%S %p')
+    except TypeError:
+        data.index = pd.to_datetime(data.index)
     data.columns = ['West' , 'East']
     data['Total'] = data['West'] + data['East']
     return data
