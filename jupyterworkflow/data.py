@@ -22,7 +22,7 @@ def get_fremont_data(filename='Fremont.csv', url=FREMONT_URL,
     ReturnS
     -------
     data : pandas.DataFrame
-        The fremont bridge data
+        The fremont bridge
     """
     if force_download or not os.path.exists(filename):
         urlretrieve(url, filename)
