@@ -1,2 +1,2 @@
-test: 
-       python -m pytest jupyterworlflow
+test:
+    python -m  pytest  jupyterworlflow
