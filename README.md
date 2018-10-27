@@ -7,7 +7,7 @@ More indepth back ground about the project can be found on Jakes's [__blog__](ht
 
 I tried it first by following his tutorial on youtube, but I later found out that this toturial is best consumed by reading the [__blog__](http://jakevdp.github.io/blog/2017/03/03/reproducible-data-analysis-in-jupyter/) first and then following it using the medium of your choice for practice.
 
-But if you wish to view my version of it, you can follow along by clicking this [__notebook.__](https://github.com/MrRutledge/Seattle_Bridge_Data_work_flow/blob/master/DataWorkFlow1.ipynb) 
+But if you wish to view my version of it, you can follow along by clicking this [__notebook.__](https://github.com/MrRutledge/Seattle_Bridge_Data_work_flow/blob/master/Seattle_Bridge_Bike_Data.ipynb) 
 I have made the notebook as accessble as possible because I myself am just learning. 
 
 ### **The project**
