@@ -1,4 +1,4 @@
-# ** Seattle Bridge Data Work Flow**
+# **Seattle Bridge Data Work Flow**
 Youtube follow along course by Jake Vanderplas **2/03/2018**
 
 In this project I reproduce a data analysis of the Seattle Fremont Bridge data, the data we analyse is collected using the  automated bicycle counter.
