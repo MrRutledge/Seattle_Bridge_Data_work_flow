@@ -19,7 +19,7 @@ def get_fremont_data(filename='Fremont.csv', url=FREMONT_URL,
     force_download : bool (optional)
         if True, force redownload of data
 
-    ReturnS
+    Returns
     -------
     data : pandas.DataFrame
         The fremont bridge
