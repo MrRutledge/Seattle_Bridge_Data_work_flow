@@ -33,6 +33,6 @@ def get_fremont_data(filename='Fremont.csv', url=FREMONT_URL,
     except TypeError:
         data.index = pd.to_datetime(data.index)
 
-    data.columns = ['West', 'East']
-    data['Total'] = data['West'] + data['East']
+    data.columns = [ 'Date','Total',  'East',  'West']
+   # data['Total'] = data['West'] + data['East']
     return data
